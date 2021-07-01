@@ -29,7 +29,7 @@ target_link_libraries(helloworld_cli PRIVATE
 
 
 target_link_libraries(test_version
-    helloworld
+    helloworld gtest
 )
 
 if (MSVC)

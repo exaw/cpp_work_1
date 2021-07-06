@@ -16,7 +16,7 @@ jobs:
           cd googletest
           cmake .
           cmake --build .
-          make install
+          sudo make install
       - run: 
           cmake ./src/hello -DPATCH_VERSION=${{ github.run_number }}
           cmake --build .

@@ -1,7 +1,9 @@
 
+#include <iostream>
+
 #include <gtest/gtest.h>
 
-#include "lib.h"
+#include "version.h"
 
 TEST(test_version_1, test_version)
 {
@@ -10,6 +12,6 @@ TEST(test_version_1, test_version)
 
 int main()
 {
-    //return version() > 0 ? 0 : 1;
+    testing::InitGoogleTest ();
     return RUN_ALL_TESTS();
 }

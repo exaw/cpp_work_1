@@ -1,7 +1,7 @@
 
 #include <iostream>
 
-#include "lib.h"
+#include <version.h>
 
 using namespace std;
 

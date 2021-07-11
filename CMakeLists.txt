@@ -1,0 +1,18 @@
+cmake_minimum_required(VERSION 3.2)
+
+set(PATCH_VERSION "1" CACHE INTERNAL "Patch version")
+set(PROJECT_VESRION 0.0.${PATCH_VERSION})
+
+project(helloworld VERSION ${PROJECT_VESRION})
+set ( CMAKE_INSTALL_PREFIX ${CMAKE_SOURCE_DIR}/install )
+
+enable_testing()
+add_subdirectory(./src)
+
+set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
+set(CPACK_PACKAGE_VERSION_MINOR "${PROJECT_VERSION_MINOR}")
+set(CPACK_PACKAGE_VERSION_PATCH "${PROJECT_VERSION_PATCH}")
+
+set(CPACK_PACKAGE_CONTACT dev.taynovai@gmail.com)
+
+include(CPack)

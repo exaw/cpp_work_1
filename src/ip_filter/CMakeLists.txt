@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 # 
-project(hw_1 VERSION ${PROJECT_VESRION})
+project(helloworld VERSION ${PROJECT_VESRION})
 
 add_executable(ip_filter ip_filter.cpp main.cpp)
 add_executable(ip_filter_test ip_filter.cpp ip_filter_test.cpp)

@@ -18,7 +18,7 @@ jobs:
           cmake --build .
           sudo make install
       - run: |
-          cmake ./src/hello -DPATCH_VERSION=${{ github.run_number }}
+          cmake . -DPATCH_VERSION=${{ github.run_number }}
           cmake --build .
           cmake --build . --target test
           cmake --build . --target package
